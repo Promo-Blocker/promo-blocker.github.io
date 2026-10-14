@@ -1,28 +1,25 @@
-# Project Name
+# promo-blocker.github.io
 
-> One-sentence description of what this project does and who it's for.
+> Public website for Promo Blocker, served by GitHub Pages at https://promo-blocker.github.io. Hosts the privacy policy for Promoted Post Hider for Reddit.
 
-## Features
+## Pages
 
-- 
+| URL | File | Purpose |
+| --- | --- | --- |
+| https://promo-blocker.github.io/ | `index.html` | Landing page |
+| https://promo-blocker.github.io/privacy/ | `privacy/index.html` | Privacy policy linked from the Chrome Web Store listing |
 
-## Getting Started
+## How it is built
 
-### Prerequisites
+Plain HTML and one stylesheet. No build step, no scripts, no third-party assets. `.nojekyll` tells GitHub Pages to serve the files as-is.
 
-- 
+## Editing
 
-### Installation
+1. Change the HTML or `styles.css`.
+2. Open the file in a browser to check it.
+3. Open a pull request. Pages redeploys from `main` after merge.
 
-```sh
-# installation steps
-```
-
-### Usage
-
-```sh
-# usage example
-```
+The privacy policy wording must stay in sync with the extension's behavior. If the extension ever gains a permission or collects anything, update the policy and the effective date in the same change.
 
 ## Development
 
@@ -30,4 +27,4 @@ See [CONTRIBUTING guidelines in CLAUDE.md](CLAUDE.md) for the development workfl
 
 ## License
 
-TBD
+MIT

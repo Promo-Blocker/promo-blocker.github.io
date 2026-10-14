@@ -2,20 +2,16 @@
 
 This repo follows the global development workflow (issues for every task, milestones, docs updated in every PR, code review before merge). Repo-specific notes:
 
-## First-time setup (after creating a repo from this template)
+## What this is
 
-1. Fill in `README.md` (name, description, usage) and the license.
-2. Create the standard labels:
-   ```sh
-   gh label create refactor --color D4C5F9 --description "Code restructuring with no behavior change" 2>/dev/null || true
-   gh label create chore --color FEF2C0 --description "Maintenance, tooling, dependencies" 2>/dev/null || true
-   ```
-   (`bug`, `enhancement`, and `documentation` exist by default.)
-3. Create a GitHub Project named after this repo and link it (`gh project create --owner <owner> --title "<repo>"`).
-4. Create an initial milestone for the first body of work.
+A static GitHub Pages site for the Promo-Blocker org, served from the `main` branch root. It exists mainly to host the privacy policy URL that the Chrome Web Store listing for Promoted Post Hider for Reddit points at. Keep it to plain HTML and CSS with no scripts and no external assets, so the site itself has nothing to disclose.
 
 ## Conventions
 
+- One directory per page with an `index.html` inside so URLs end in `/` (for example `privacy/index.html` serves `/privacy/`).
+- Absolute paths for shared assets (`/styles.css`) so nested pages resolve them.
+- Every page carries the Reddit non-affiliation sentence.
+- The privacy policy effective date changes whenever the policy text changes.
 - Branches: `feat/<issue#>-slug`, `fix/<issue#>-slug`, `chore/<issue#>-slug`
 - Commits and squash-merge titles: Conventional Commits (`feat:`, `fix:`, `chore:`, `docs:`, `refactor:`)
 - Every PR updates `CHANGELOG.md` under `[Unreleased]` and links its issue with `Closes #N`

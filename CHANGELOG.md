@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Landing page and privacy policy page for Promoted Post Hider for Reddit, served from GitHub Pages
+- Shared stylesheet with light and dark themes
+- `.nojekyll` so Pages serves files without Jekyll processing
+
 ### Changed
 
 ### Fixed
