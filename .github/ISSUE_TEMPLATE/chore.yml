@@ -1,0 +1,17 @@
+name: Chore / maintenance
+description: Tooling, dependencies, refactoring, docs, CI
+labels: ["chore"]
+body:
+  - type: textarea
+    id: task
+    attributes:
+      label: Task
+      description: What needs doing and why.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Definition of done
+      placeholder: |
+        - [ ]
