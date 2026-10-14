@@ -11,10 +11,10 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #0f1a2b;
-    --card: #182c4a;
+    --card: #15243d;
     --text: #ebf0f6;
     --muted: #a0acbe;
-    --navy: #0f1a2b;
+    --navy: #182c4a;
     --border: #27405f;
   }
 }
